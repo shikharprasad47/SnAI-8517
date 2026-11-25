@@ -54,3 +54,35 @@ User interface -
 
 Security and permissions - 
                     Controls user logins and restricts which users or apps can read, modify, or execute specific files. Example - Preventing standard user accounts from modifying protected system files without authorization.
+
+Mission 3 - Understand the operating system
+
+1. Task / objective
+Explore the macOS operating system environment, inspect active user identity, storage usage, and running processes with Process Identifiers (PIDs), compare absolute and relative file paths, inspect owner file permissions ("rwx"), and explain core operating system responsibilities.
+
+2. Work completed
+- Completed Task 3.1 by inspecting OS version, kernel/architecture details, active account identity (redacted), disk storage capacity, and a live system activity snapshot.
+- Completed Task 3.2 by listing active processes while running applications, explaining what a process and PID are, and identifying two active process examples.
+- Completed Task 3.3 by navigating between the root repository and mission subfolders to compare absolute and relative paths, and inspecting "ls -l" permission flags ("-rw-r--r--") for the file owner.
+- Completed Task 3.4 by completing the six-row operating system responsibilities table covering process, memory, device, file, shell/UI, and security management.
+
+3. Commands / tools used
+- "sw_vers" and "uname -srm" — Displayed macOS version, "Darwin" kernel, and "arm64" architecture details.
+- "whoami" and "df -h /" — Verified the active local user session (redacted as "[redacted]") and checked used versus available disk space.
+- "top -l 1 | head -n 12" and "ps aux | head -n 15" — Captured a snapshot of system resource usage and running processes with their PIDs.
+- "cd", "pwd", and "ls -l" — Compared absolute vs. relative paths and inspected owner read, write, and execute permission letters.
+
+4. My understanding
+The operating system acts as the resource manager between hardware and user applications, assigning each running program a unique Process Identifier (PID) so multiple apps can share CPU and RAM safely. Understanding absolute paths (starting from "/") versus relative paths (starting from the current folder) prevents navigation mistakes, while permission bits ("r", "w", "x") protect files from unauthorized reading, editing, or execution.
+
+5. Difficulties faced
+No major difficulties.
+
+6. How I resolved them
+Not applicable.
+
+7. Evidence / files
+- "mission-03-operating-system/README.md" (containing Task 3.1 privacy-safe system table, Task 3.2 process notes, Task 3.3 path and permission analysis, and Task 3.4 OS responsibilities table)
+
+8. Commit details
+Committed with message "Document operating system and file management" and pushed to "master" on GitHub.

@@ -47,3 +47,34 @@ Browser renders the page: Your client browser reassembles the incoming packets a
 
 [This was the mission I learnt alot and had to read things twice or thrice to get it, this was also the mission I took A.I's help. (I'm sorry for that)]
 
+
+Mission 7 - How computers communicate
+
+1. Task / objective
+Explain core computer networking concepts (LAN, MAN, WAN, DNS, router, protocol, packet switching, and client-server), observe safe network connectivity and DNS lookup behavior from Terminal without exposing private IP or Wi-Fi details, and trace what happens step by step when opening a website.
+
+2. Work completed
+- Completed Task 7.1 by filling out the eight-row networking concepts table with clear explanations and real-world examples.
+- Completed Task 7.2 by running privacy-safe connectivity ("ping") and DNS lookup ("nslookup") checks against "example.com" in Terminal and explaining what each tool reveals.
+- Completed Task 7.3 by writing a six-step sequence describing how a client browser, DNS, router, protocols, and web server communicate to load and render a webpage.
+- Saved all documentation in "mission-07-networking/README.md" and pushed the commit to GitHub.
+
+3. Commands / tools used
+- "ping -c 3 example.com" — Tested network reachability and measured packet round-trip time to a public server.
+- "nslookup example.com" — Queried DNS to resolve the human-readable domain name into its public IP address.
+- "git add", "git commit", and "git push" — Staged, committed, and published Mission 7 to GitHub.
+
+4. My understanding
+Computer networks scale from local home or lab setups (LAN) to campus/city networks (MAN) and global networks like the Internet (WAN). When I enter a URL in a browser (client), DNS translates the domain name into an IP address, routers forward divided data packets across networks following shared protocols like TCP/IP and HTTPS, and the remote server returns the webpage data for my browser to display.
+
+5. Difficulties faced
+There were few things that I had forgot about like ping and things
+
+6. How I resolved them
+I did asked A.I to help me with that part and asked it to teach me again what it is and how it actually works
+
+7. Evidence / files
+- "mission-07-networking/README.md" (containing the Task 7.1 network concepts table, Task 7.2 safe connectivity and DNS lookup notes, and Task 7.3 step-by-step website loading explanation)
+
+8. Commit details
+Committed with message "Explain networking concepts and website communication" and pushed to "origin/master" on GitHub.
