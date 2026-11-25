@@ -1,0 +1,4 @@
+Replacing the content just wipes what it already had and adding texts adds the layer over the previous one (actually under it cause it adds in the second line)
+The difference is that the copied file stays at the original place and where its position is whereas the moved file stays where it got moved to
+It shows what all folder/files exist in the current working directory so the user knows what is where or any other needed information.
+Because its useful to know what is where rather then wondering around
